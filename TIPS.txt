@@ -1,0 +1,13 @@
+Create a django project
+- Run start project  command, ex: python startproject magic_notes
+
+What is an app?
+An app is a page or a module which will have view, modal, tests and url config file.
+
+Create an app
+- Run start app  command, ex: python startapp notes
+
+Working with modals
+1. Define your modal in models.py in form of class
+2. Run makemigrations command, ex: python manage.py makemigrations notes
+2. Run migrate to apply changes, ex: python manage.py migrate
