@@ -11,3 +11,14 @@ Working with modals
 1. Define your modal in models.py in form of class
 2. Run makemigrations command, ex: python manage.py makemigrations notes
 2. Run migrate to apply changes, ex: python manage.py migrate
+
+Working with Django db shell?
+You can work with db using "python manage.py shell" commandline tool, but there are many tool available to explore/edit DB
+
+Working with /admin.py
+
+1. Create a superuser/admin using CMD: python manage.py createsuperuser (create one if you haven't)
+2. Enter details
+3. Now open <host>:<port>/admin and login using
+4. Register your app models in <your_app>/admin.py to view tabels in django admin panel, here you can manage/view tabels as an admin user
+
