@@ -7,13 +7,19 @@ An app is a page or a module which will have view, modal, tests and url config f
 Create an app
 - Run start app  command, ex: python startapp notes
 
-Working with modals
-1. Define your modal in models.py in form of class
-2. Run makemigrations command, ex: python manage.py makemigrations notes
-2. Run migrate to apply changes, ex: python manage.py migrate
+Project files
+    settings.py: all config related stuff like db and modals etc
+    urls.py: mapping of resources(path)
+    wsgi.py: webserver configuration items
+
+    Working with modals
+    0. register you app in settings.py within INSATLLED APP section ex 'notes.apps.NotesConfig'
+    1. Define your modal in models.py in form of class extents (models.Model)
+    2. Run makemigrations command, ex: python manage.py makemigrations notes
+    3. Run migrate to apply changes, ex: python manage.py migrate
 
 Working with Django db shell?
-You can work with db using "python manage.py shell" commandline tool, but there are many tool available to explore/edit DB
+You can work with db using "python manage.py shell" commandline tool, but there are many tools/extensions available to explore/edit DB
 
 Working with /admin.py
 
